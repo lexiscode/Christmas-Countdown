@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+
+    <title>Countdown Timer</title>
+</head>
+<body onload='myFunction()'>
+<h1>Season's Greetings!!!</h1>
+<div class='countdown-container'>
+    <div class='countdown-el days-c'>
+        <p class='big-text' id='days'>0</p>
+        <span>days</span>
+    </div>
+    <div class='countdown-el hours-c'>
+        <p class='big-text' id='hours'>0</p>
+        <span>hours</span>
+    </div>
+    <div class='countdown-el mins-c'>
+        <p class='big-text' id='mins'>0</p>
+        <span>minutes</span>
+    </div>
+    <div class='countdown-el seconds-c'>
+        <p class='big-text' id='seconds'>0</p>
+        <span>seconds</span>
+    </div>
+</div>
+<p id='myBrandText'></p>
+
+    <button onclick='play()'>Play Song</button>
+    <audio id='audio' src='audio.mp3'></audio>
+
+<br>
+<select onchange='changeBackground(this.value)'>
+    <option disabled='disabled' selected='selected'>Switch Images</option>
+    <option value='pics1.jpg'>Default</option>
+    <option value='pics2.jpg'>Tree and Bells 1</option>
+    <option value='pics3.jpg'>Tree and Bells 2</option>
+</select>
+
+<script src='main.js'></script>
+</body>
+</html>
